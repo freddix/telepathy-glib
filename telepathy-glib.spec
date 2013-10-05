@@ -1,11 +1,11 @@
 Summary:	Telepathy Glib bindings
 Name:		telepathy-glib
-Version:	0.20.1
+Version:	0.22.0
 Release:	1
-License:	GPL v2
+License:	LGPL v2
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-glib/%{name}-%{version}.tar.gz
-# Source0-md5:	780034ff7433f33e6577b02fd7a2cb0a
+# Source0-md5:	c333ceb21a9ca1c52a0e6e36432943d1
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	dbus-glib-devel
