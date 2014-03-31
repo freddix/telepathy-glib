@@ -1,11 +1,11 @@
 Summary:	Telepathy Glib bindings
 Name:		telepathy-glib
-Version:	0.22.0
+Version:	0.24.0
 Release:	1
 License:	LGPL v2
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-glib/%{name}-%{version}.tar.gz
-# Source0-md5:	c333ceb21a9ca1c52a0e6e36432943d1
+# Source0-md5:	93c429e37750b25dcf8de86bb514664f
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	dbus-glib-devel
@@ -58,6 +58,8 @@ install -d $RPM_BUILD_ROOT%{_libdir}/telepathy
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
